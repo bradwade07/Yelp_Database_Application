@@ -199,7 +199,7 @@ def loginFn(login):
         stage2()
 
 def main():
-    conn = pyodbc.connect('driver={ODBC Driver 18 for SQL Server};server=cypress.csil.sfu.ca;uid=s_tsa140;pwd=GHg2Ft3RNmy2E667;Encrypt=yes;TrustServerCertificate=yes')
+    conn = pyodbc.connect('driver={ODBC Driver 18 for SQL Server};server=cypress.csil.sfu.ca;uid=;pwd=;Encrypt=yes;TrustServerCertificate=yes') ## uid and pwd in your db
     cur = conn.cursor() 
     print("Welcome To The Yelp Database.")
     login = input("Please enter your name: ")
